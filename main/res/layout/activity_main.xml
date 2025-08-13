@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Name (falls von dir genutzt) -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Kalender/Datum (wenn du es brauchst) -->
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Heutiges Ziel (nur Anzeige) -->
+    <TextView
+        android:id="@+id/textViewHeutigesZielTitel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Heutiges Ziel:"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewHeutigesZiel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(kein Ziel gesetzt)"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Button: Ziel im Kalender ansehen/bearbeiten -->
+    <Button
+        android:id="@+id/buttonZumKalender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ziel im Kalender bearbeiten"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Weiter Button (falls benötigt) -->
+    <Button
+        android:id="@+id/buttonWeiter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weiter" />
+
+</LinearLayout>

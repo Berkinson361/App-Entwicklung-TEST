@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonZurueck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zurück"
+            android:layout_marginBottom="12dp" />
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/textViewSelectedDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kein Datum ausgewählt"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/editTextZielBeschreibung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ziel für diesen Tag eingeben"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:gravity="top"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/buttonZielSpeichern"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ziel speichern"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>
